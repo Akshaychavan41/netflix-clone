@@ -1,0 +1,68 @@
+.loginScreen {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../Assets/home-bg.jpg");
+}
+.loginScreen__background {
+  display: flex;
+}
+.loginScreen__logo {
+  position: fixed;
+
+  left: 20px;
+  width: 150px;
+}
+.loginScreen__button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-weight: 400;
+  padding: 7px 17px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.loginScreen__body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  margin: 0 auto;
+  padding: 75px 0;
+  align-items: center;
+  max-width: 650px;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3rem;
+}
+.loginScreen__body > h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.loginScreen__subscribe {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.subscribe__input {
+  min-width: 500px;
+  height: 50px;
+  outline-width: 0;
+}
+.subscribe__button {
+  padding: 7px 17px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  min-width: 150px;
+}

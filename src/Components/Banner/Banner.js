@@ -18,14 +18,13 @@ function Banner(props) {
     fetchData();
   }, []);
 
-  console.log(movie);
   return (
     <div
       className="banner"
       style={{
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original${movie.backdrop_path}")`,
-        backgroundPosition: "center center",
+        // backgroundPosition: "center center",
       }}
     >
       <div className="banner__content">

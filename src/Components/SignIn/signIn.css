@@ -1,0 +1,38 @@
+.signIn_container {
+  color: #fff;
+  padding: 40px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.signIn_container input {
+  display: block;
+  min-width: 200px;
+  padding: 10px;
+  margin: 20px 0;
+  color: #fff;
+  background: #333;
+  outline-width: 0;
+}
+.signIn_container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.signIn_container p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #737373;
+}
+.signIn_container span {
+  color: #fff;
+  cursor: pointer;
+}

@@ -11,7 +11,7 @@ function Row(props) {
     }
     fetchData();
   }, []);
-  console.log(movies);
+
   return (
     <div className="movieRow">
       <h2>{props.title}</h2>
