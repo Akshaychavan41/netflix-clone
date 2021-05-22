@@ -30,6 +30,7 @@ function Row(props) {
   const toggleModal = () => {
     setPlayVideo(!playVideo);
   };
+  console.log(window.innerWidth);
   return (
     <div className="movieRow">
       <h2>{props.title}</h2>
@@ -42,7 +43,9 @@ function Row(props) {
               id={movie.id}
               className={`row_poster ${props.islargeRow && "row_posterLarge"}`}
               src={`https://image.tmdb.org/t/p/original${
-                props.islargeRow ? movie.poster_path : movie.backdrop_path
+                props.islargeRow || window.innerWidth < 450
+                  ? movie.poster_path
+                  : movie.backdrop_path
               }`}
             />
           );

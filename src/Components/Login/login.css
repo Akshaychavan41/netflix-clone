@@ -73,3 +73,46 @@
   cursor: pointer;
   min-width: 150px;
 }
+
+@media screen and (max-width: 450px) {
+  .loginScreen__body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 auto;
+    padding: 75px 0;
+    align-items: center;
+    max-width: 380px;
+    height: 100%;
+    margin-top: 100px;
+  }
+  .loginScreen__body > h1 {
+    font-size: 2rem;
+  }
+  .loginScreen__body > h3 {
+    font-size: 1rem;
+    margin: 0.6rem 0;
+  }
+  .loginScreen__subscribe {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .subscribe__input {
+    min-width: 240px;
+    height: 30px;
+    outline-width: 0;
+  }
+  .subscribe__button {
+    padding: 7px 17px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    min-width: 30px;
+  }
+}

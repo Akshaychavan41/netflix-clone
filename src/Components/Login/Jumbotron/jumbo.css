@@ -54,3 +54,56 @@
   max-width: 230px;
   z-index: 2;
 }
+@media screen and (max-width: 450px) {
+  .jumbo__container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 45px 5%;
+    color: #fff;
+    border-bottom: 8px solid #222;
+    justify-content: center;
+  }
+  .jumbo__text {
+    width: 80%;
+    margin: auto;
+  }
+  .jumbo__text > h1 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .jumbo__text > h2 {
+    font-size: 1em;
+    margin: 0.75em 0 0.25em;
+    font-weight: 400;
+    text-align: center;
+  }
+  .jumbo__img {
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .jumbo__img > img {
+    max-height: 270px;
+    height: auto;
+    margin-top: 0;
+    z-index: 10;
+    position: absolute;
+  }
+  .jumbo__video.v1 {
+    position: absolute;
+    top: 68px;
+    left: 55px;
+    max-width: 275px;
+    z-index: 2;
+  }
+  .jumbo__video.v3 {
+    position: absolute;
+
+    left: 80px;
+    top: 30px;
+    max-width: 220px;
+    z-index: 2;
+  }
+}
