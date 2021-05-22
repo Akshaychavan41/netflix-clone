@@ -4,8 +4,11 @@
 
 .loginScreen {
   position: relative;
-  height: 100vh;
+
   background-image: url("../../Assets/home-bg.jpg");
+}
+.loginScreen.signIn {
+  height: 100vh;
 }
 .loginScreen__background {
   display: flex;

@@ -6,10 +6,11 @@ import Jumbotron from "./Jumbotron/Jumbotron";
 import { useHistory } from "react-router";
 function Login(props) {
   const [signIn, setSignIn] = useState(false);
+  const [requestPage, setRequestPage] = useState("");
   const history = useHistory();
   return (
     <div className="main__container">
-      <div className="loginScreen">
+      <div className={`loginScreen ${signIn ? "signIn" : ""}`}>
         <div className="loginScreen__background">
           <img
             onClick={() => setSignIn(false)}
@@ -17,13 +18,16 @@ function Login(props) {
             src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
           ></img>
           <button
-            onClick={() => setSignIn(true)}
+            onClick={() => {
+              setRequestPage("signIn");
+              setSignIn(true);
+            }}
             className="loginScreen__button"
           >
             Sign In
           </button>
           {signIn ? (
-            <SignIn />
+            <SignIn requestPage={requestPage} />
           ) : (
             <div className="loginScreen__body">
               <h1>Unlimited movies, TV shows and more.</h1>
@@ -38,7 +42,15 @@ function Login(props) {
                   className="subscribe__input"
                   type="text"
                 />
-                <button className="subscribe__button">Get Started</button>
+                <button
+                  onClick={() => {
+                    setRequestPage("register");
+                    setSignIn(true);
+                  }}
+                  className="subscribe__button"
+                >
+                  Get Started
+                </button>
               </div>
             </div>
           )}

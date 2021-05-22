@@ -37,3 +37,13 @@
 .row_posterLarge:hover {
   transform: scale(1.1);
 }
+.player-wrapper {
+  position: relative;
+  /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: relative;
+  top: 0;
+  left: 0;
+}
