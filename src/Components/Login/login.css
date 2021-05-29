@@ -14,13 +14,13 @@
   display: flex;
 }
 .loginScreen__logo {
-  position: fixed;
+  position: absolute;
   cursor: pointer;
   left: 20px;
   width: 150px;
 }
 .loginScreen__button {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   font-weight: 400;

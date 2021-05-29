@@ -12,10 +12,12 @@ class Player extends Component {
         styles={{
           modal: {
             maxWidth: "unset",
-            width: "60%",
+            width: "90%",
             padding: "unset",
             margin: "auto",
+            height: "60vh",
           },
+
           closeButton: {
             background: "grey",
             color: "white",
@@ -23,7 +25,7 @@ class Player extends Component {
         }}
         center
       >
-        <ReactPlayer url={url} width="100%" height="calc(100vh - 100px)" />
+        <ReactPlayer url={url} width="100%" height="60vh" />
       </Modal>
     );
   }

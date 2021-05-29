@@ -50,3 +50,27 @@
   background-color: #efefef;
   transition: all 0.3s;
 }
+@media screen and (max-width: 450px) {
+  .banner__title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 0.3rem;
+    margin-top: 250px;
+  }
+  .banner {
+    height: 550px;
+    position: relative;
+    color: white;
+    object-fit: contain;
+  }
+  .banner--fadeButtom {
+    height: 7.6rem;
+    margin-top: 100px;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(5, 1, 1, 0.678),
+      black
+    );
+  }
+}
