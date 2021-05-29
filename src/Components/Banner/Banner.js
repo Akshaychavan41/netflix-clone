@@ -58,7 +58,9 @@ function Banner(props) {
           >
             Play
           </button>
-          <button className="banner__button">My List</button>
+          {window.innerWidth > 450 && (
+            <button className="banner__button">My List</button>
+          )}
         </div>
         {window.innerWidth > 450 && (
           <h1 className="banner__desc">
