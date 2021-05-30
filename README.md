@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Netflix Clone
 
-This is a practice project where I tried to build a clone alike Netflix using React, Redux
+This is a practice project where I tried to build a clone of Netflix using React, Redux.
 To See the running project please see the [Deployed Build](https://react-clone-7b865.web.app/)
 
 ### Features Included
